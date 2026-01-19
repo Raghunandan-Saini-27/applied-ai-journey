@@ -41,7 +41,7 @@ average = sum(marks) / len(marks)
 print("Average:", average)
 
 
-# Tules(Read only lists)
+# Tuples(Read only lists)
 
 colors = ("red", "green", "blue")
 print(colors[0])
