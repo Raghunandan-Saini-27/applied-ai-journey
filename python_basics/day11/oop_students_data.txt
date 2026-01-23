@@ -1,0 +1,3 @@
+Arijit|Hindi:89,Maths:67,English:58
+Sushma|Hindi:83,Maths:78,English:90
+Ryan|Hindi:77,Maths:100,English:98
