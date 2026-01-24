@@ -24,12 +24,12 @@ import numpy as np
 
 arr=np.array([10,20,30,40])
 print(arr)
-print(type(arr))
+print(type(arr))	#type
 
 # Shape and dimensions
 
-print(arr.shape)
-print(arr.ndim)
+print(arr.shape) #shape
+print(arr.ndim)  #dimension
 
 # 2-D Array
 
@@ -72,4 +72,4 @@ print("Average per student :",marks.mean(axis=1))
 print("Avearge per subject :",marks.mean(axis=0))
 
 '''axis=1 -> rowise
-axis=2 -> columnwise'''
+axis=0 -> columnwise'''
