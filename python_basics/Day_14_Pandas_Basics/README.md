@@ -19,5 +19,5 @@ Pandas is used to:
 
 ## Files
 - pandas_basics.py
-- day14_pandas_task.py
+- data.csv
 - students.csv
