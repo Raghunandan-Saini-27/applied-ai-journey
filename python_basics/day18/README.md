@@ -1,38 +1,99 @@
+# 📅 Day 18: Model Evaluation using Regression Metrics
 
-'''
--> What dataset is
+## 📌 Objective
+Learn how to evaluate a **regression model** using standard evaluation metrics and understand how well a trained model performs on **unseen data**.
 
-Dataset is like the collection of data that we use to train,test and eavluate a ML model.
+---
 
-eg. Dataset=x+y where x is input data and y is output data we want to predict.
+## 📊 Dataset Used
+**Diabetes Dataset** from `sklearn.datasets`
 
-In short it is raw material req for an ml model.
+- Contains medical features related to diabetes
+- Target variable represents a quantitative disease progression measure
+- Used commonly for learning regression tasks
 
--> What each metric means
+### Dataset Structure
+- **X (features)** → Input variables
+- **y (target)** → Continuous output value to predict
 
-It means on avg how wrong a model is.
+---
 
-it tells us avg absolute diff between 
-1) actual value ,and 
-2) predicted value
+## 🔄 Train-Test Split
+The dataset is split into:
+- **Training data** → Used to train the model
+- **Testing data** → Used to evaluate model performance on unseen data
 
-there are multiple types of metrics so far I have learned
+This helps prevent overfitting and provides a realistic measure of model accuracy.
 
-1) mae = mean absolute error
+---
 
-eg. mae=7 model is off by 7 units.
+## 🤖 Model Used: Linear Regression
+Linear Regression is a supervised learning algorithm used to predict **continuous values**.
 
-2) mse= mean squared error
+The model learns a relationship of the form:
+\[
+y = mx + b
+\]
 
->Less the mse better the model more the mse worse the model as it is squared mean error so 2**2=4 small error whereas, 
-10**10=100 Huge error
+Where:
+- `x` → input features
+- `y` → predicted output
+- `m`, `b` → learned parameters
 
-3) r2=coeff. of determination 
+---
 
-It means how much of the data's variation the model explains.
+## 📈 Evaluation Metrics Used
 
-range : 1=perfect, 0=useless, <0 worse tha guessing
+### 1️⃣ Mean Absolute Error (MAE)
+MAE measures the **average absolute difference** between actual and predicted values.
 
--> Is the model good or bad?'''
+MAE = (1/n)(y_{actual} - y_{predicted})
 
-As of my linear regression model train on diabetes data it is like i would say around good as model has R2 score 0f 0.45 it means it explains 45% of the variation.
+- Easy to interpret
+- Lower value indicates better performance
+- Represents average prediction error in original units
+
+---
+
+### 2️⃣ Mean Squared Error (MSE)
+MSE measures the **average squared difference** between actual and predicted values.
+
+MSE =  (1/n)[y_{actual} - y_{predicted}]^2
+
+- Penalizes large errors more than MAE
+- Useful when large errors are especially undesirable
+- Lower value indicates better performance
+
+---
+
+### 3️⃣ R² Score (Coefficient of Determination)
+R² measures how well the model explains the **variance in the target data**.
+
+- **R² = 1** → Perfect model
+- **R² = 0** → Model performs no better than predicting the mean
+- **R² < 0** → Model performs worse than random guessing
+
+---
+
+## 📌 Results & Observation
+- The model achieves a moderate R² score (~0.45)
+- This means the model explains approximately **45% of the variance** in the data
+- The model performs reasonably well but has room for improvement
+
+---
+
+## 🧠 Key Learnings
+- Model evaluation is critical to understand real-world performance
+- Training accuracy alone is not sufficient
+- Different metrics capture different aspects of error
+- R² provides insight into model usefulness, not just error size
+
+---
+
+## 🚀 Conclusion
+This task strengthened understanding of:
+- Regression model evaluation
+- Importance of MAE, MSE, and R²
+- Train-test split for fair evaluation
+
+These concepts are fundamental for building reliable Applied AI systems.

@@ -1,4 +1,4 @@
-# 🎯 4️⃣ Day 18 Mini Task (DO THIS)
+# 🎯 Day 18 Mini Task (DO THIS)
 
 '''
 1️⃣ Train Linear Regression on Diabetes dataset
