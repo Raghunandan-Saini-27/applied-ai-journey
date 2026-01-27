@@ -18,7 +18,7 @@ data=load_breast_cancer()
 x=data.data
 y=data.target
 
-x_train,x_test,y_train,y_test=train_test_split(x,y,train_size=0.2,random_state=47)
+x_train,x_test,y_train,y_test=train_test_split(x,y,train_size=0.2,random_state=42)
 
 model=LogisticRegression(max_iter=5000)
 
