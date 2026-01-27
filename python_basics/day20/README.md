@@ -74,7 +74,7 @@ Recall = {TP}/{TP + FN}
 ### 4️⃣ F1 Score
 Harmonic mean of Precision and Recall.
 
-F1 = {2(Precision\Recall)}{Precision + Recall}
+F1 = {2(Precision*Recall)}/{Precision + Recall}
 
 
 - Useful when dataset is imbalanced
