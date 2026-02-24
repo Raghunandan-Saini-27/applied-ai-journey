@@ -37,7 +37,7 @@ def authorize(role,access_level):
 
 #----Rule Engine----
 
-def acess_decision_engine(username,password,role,access_level):
+def access_decision_engine(username,password,role,access_level):
 
 	#Guard Clause
 	if not validate_input(username,password,role,access_level):
@@ -57,5 +57,5 @@ if __name__=="__main__":
 	role=input("Enter the role (user/manager/admin) : ")
 	access_level=int(input("Enter access level (1-low,2-mid,3-high) : "))
 
-	result=acess_decision_engine(username,password,role,access_level)
+	result=access_decision_engine(username,password,role,access_level)
 	print("\nSystem Decision : ",result)
