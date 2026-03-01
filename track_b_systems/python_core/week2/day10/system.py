@@ -32,7 +32,7 @@ def deposit_amount(user):
 
 def withdraw_amount(user):
 	wit_amount=int(input("Enter the amount to be withdrawn : \n"))
-		
+
 	if wit_amount>user['balance'] :
 		print("Insuffecient Amount. Withdraw Failed !\n")
 
